@@ -1,0 +1,144 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+header .top{
+    background-color: #333;
+    height: 100px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+header .ImagenLogo{
+    height: 104px;
+    
+}
+
+header .top #IconoMenu{
+    color:white;
+    position:absolute;
+    right: 2.5%;
+    top:3%;
+    font-size:25px;
+}
+header .top #IconoMenu2{
+    color:white;
+    position:absolute;
+    right: 9%;
+    top:3%;
+    font-size: 25px;
+
+}
+
+.DescuentosProgramacion{
+    width: 100%;
+    height: auto;
+    background-color: blueviolet;
+    padding:20px;
+}
+.DescuentosVideo{
+    display:flex;
+    justify-content: center;
+    margin:10px
+}
+.ImagenPromocion{
+    height: 350px;
+    border-radius: 10%;
+}
+
+.DivPromocion{
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.DivPromocion img{
+    width: 120px;
+    margin:10px;
+    border-radius: 10%;
+}
+
+.programacion{
+    margin-top: 15px;
+    overflow: hidden;
+    width: 80%;
+
+}
+.programacion h3{
+    display: flex;
+    justify-content: center;
+}
+/*sección noticias*/
+.noticias {
+    display:flex;
+    justify-content: ;
+    width: 100%;
+    height: auto;
+    background-color: brown;
+    flex-wrap: wrap;
+}
+.noticias article{
+    display: flex;
+    width: 420px;
+    margin:20px;
+    max-height: 220px;
+    margin-top:50px;
+}
+.noticias article img{
+    height: 100px;
+    width: 100px;
+    border-radius: 20%;
+    border-style: solid;
+}
+.noticias article div{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align:center;
+    text-align-last: center;
+
+}
+.noticias #tituloNoticias{
+    position:relative;
+    left: 50%;
+    top:20px;
+}
+/*sección noticias*/
+
+/*Consejos*/
+.consejos{
+    background-color: cadetblue;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.consejos h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.consejos div{
+    width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    border-style: solid;
+
+    background-color: rgba(255, 0, 0, 0.644);
+}
+.consejos div img{
+    border-radius:100%;
+    width: 250px;
+    height: 150px;
+    
+}
+.consejos div button{
+    border:none;
+}
+/*Consejos*/
