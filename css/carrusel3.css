@@ -1,0 +1,28 @@
+.slider3{
+    width:auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+.slider3 ul{
+    width: 90%;
+    padding-top:10px;
+    padding-bottom: 10px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: indigo;
+    border-radius: 20px;
+}
+.slider3 ul li{
+    width: auto;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    padding:5px;
+    border-right-color: hsla(182, 25%, 50%, 0.801);
+    border-right-style: dashed;
+    border-left-color: hsla(182, 25%, 50%, 0.801);
+    border-left-style: dashed;
+}

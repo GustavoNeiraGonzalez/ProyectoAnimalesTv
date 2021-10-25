@@ -1,18 +1,18 @@
 
-.slider{
-    width:80%;
+.slider2{
+    width:40%;
     margin:auto;
     
 }
-.slider ul{
+.slider2 ul{
     display:flex;
     padding: 0;
-    width: 400%;
+    width: 600%;
     
-    animation:cambio 25s infinite alternate; /*animacion de 20 segundos infinita que alterna (no se estanca)*/
+    animation:cambios 10s infinite alternate; /*animacion de 20 segundos infinita que alterna (no se estanca)*/
     
 }
-.slider li{ 
+.slider2 li{ 
     width: 50%;
     list-style:none;
     display: flex;
@@ -20,15 +20,15 @@
     justify-content: center;
 }
 
-.slider img{
+.slider2 img{
     object-fit: cover;
-    max-width: 150px;
+    max-width: 100px;
 }
 
 
 
 
-@keyframes cambio {/* CAMBIO SIGNIFICA el animation CAMBIO del .slider ul*/
+@keyframes cambios {/* CAMBIO SIGNIFICA el animation CAMBIO del .slider ul*/
     0%{ margin-left:0;}
     20%{ margin-left:0;}/* significa que de el 0% de 20 segundos al 20% de 0 segundos este la primera imagen*/
     /*Durante este 5% de 20 segundos significará la transicion de una imagen a otra*/
