@@ -7,17 +7,19 @@
     left:0;
     width: 100%;
     height: 100%;
-    background-color: green;
+    background-image: linear-gradient(to right bottom, #00ff59, #00ef6d, #00de7b, #00cd83, #00bc88, #00bc86, #00bc84, #00bc82, #00ce77, #00df65, #1fef48, #4eff00);
     transition:all 0.2s;
     transform:translateX(-100%);
     display:flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
+    font-size: 25px;
 }
 .menu a{
     color:black;
     height: 30px;
+    max-height: 30px;
     padding:10px;
     border-bottom:1px solid rgba(255, 255, 255, 0.5);/*Para hacer un borde de color blanco hacia abajo*/
 
