@@ -2,10 +2,12 @@
     margin:0px;
     padding: 0px;
 }
-
-@font-face {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    src: url();
+h3,h4,h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 header .top{
     background-color: #333;
@@ -207,6 +209,53 @@ header .top #IconoMenu2{
     background-color: hsla(182, 25%, 50%, 0.801);
     text-align: center
 }
+/*Animación cuadro de texto Publicidad*/
+.cuadroTexto{
+    background-color: rgba(4, 252, 4, 0.425);
+    position:relative;
+    top:70%;
+    height: 30px;
+    visibility: hidden;
+    opacity:0;
+    transition: all 0.3s;
+    
+}
+#slide1:hover #cut1{
+    visibility: visible;
+    opacity: 1;
+}
+#slide2:hover #cut2{
+    visibility: visible;
+    opacity: 1;
+}
+#slide3:hover #cut3{
+    visibility: visible;
+    opacity: 1;
+}
+#slide1:hover{
+    background-color: hsla(229, 59%, 41%, 0.555);
+    border-radius: 90%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+#slide2:hover{
+    background-color: hsla(229, 59%, 41%, 0.555);
+    border-radius: 90%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+#slide3:hover{
+    background-color: hsla(229, 59%, 41%, 0.555);
+    border-radius: 90%;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+}
+/*Animación cuadro de texto Publicidad*/
+
+
 /*Plan publicitario*/
 /*footer*/
 footer{

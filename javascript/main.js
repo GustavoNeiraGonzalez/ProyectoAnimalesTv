@@ -5,10 +5,10 @@
                         document.getElementById("menu-bar").checked = false;
                 }   
         }
-        function clickBody(){
+        function clickMain(){
                 document.querySelector("main").addEventListener("click",CambiarCheckbox);
-
         }
-        
+        /* */
+
 
 

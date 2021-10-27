@@ -21,6 +21,7 @@
     flex-wrap: wrap;
     text-align: center;
     padding:5px;
+    
     border-right-color: hsla(182, 25%, 50%, 0.801);
     border-right-style: dashed;
     border-left-color: hsla(182, 25%, 50%, 0.801);
