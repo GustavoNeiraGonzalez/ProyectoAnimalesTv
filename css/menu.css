@@ -17,7 +17,7 @@
 }
 .menu a{
     color:black;
-    height: 40px;
+    height: 30px;
     max-height: 40px;
     padding:10px;
     border-bottom:1px solid rgba(255, 255, 255, 0.5);/*Para hacer un borde de color blanco hacia abajo*/

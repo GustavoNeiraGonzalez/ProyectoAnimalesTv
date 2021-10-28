@@ -2,14 +2,15 @@
 .slider{
     width:80%;
     margin:auto;
-    
+    padding-top: 20px;
+    padding-bottom: 15px;
 }
 .slider ul{
     display:flex;
     padding: 0;
     width: 400%;
     
-    animation:cambio 25s infinite alternate; /*animacion de 20 segundos infinita que alterna (no se estanca)*/
+    animation:cambio 15s infinite alternate; /*animacion de 20 segundos infinita que alterna (no se estanca)*/
     
 }
 .slider li{ 

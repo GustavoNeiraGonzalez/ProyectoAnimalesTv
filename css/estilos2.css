@@ -1,0 +1,28 @@
+.QuienesSomos{
+    display: flex;
+    flex-direction: column;
+}
+.QuienesSomos div{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.QuienesSomos img{
+    width: 200px;
+    align-self: center;
+}
+.QuienesSomos div h4{
+    font-size: 40px;
+    align-self: center;
+}
+.QuienesSomos div p{
+    text-align: center;
+    color:rgb(95, 5, 5);
+}
+.QuienesSomos div #ColorTitu{
+    color:rgba(226, 6, 6, 0.774);
+}
+.ArtProgramacion{
+    background-color: greenyellow;
+}

@@ -35,15 +35,14 @@ header .top #IconoMenu2{
     right: 9%;
     top:3%;
     font-size: 25px;
-
 }
 
 .DescuentosProgramacion{
     width: 100%;
     height: auto;
-    background-color: blueviolet;
+    background-color: rgb(0, 128, 111);
     display:flex;
-    flex-direction: column                              ;
+    flex-direction: column ;
     align-items: center;
     text-align: center;
 }
@@ -53,8 +52,11 @@ header .top #IconoMenu2{
     margin:10px
 }
 .ImagenPromocion{
-    width: 90%;
+    width: 80%;
     border-radius: 10%;
+    border-style: solid;
+    border-color: rgb(56, 56, 56);
+    
 }
 
 .DivPromocion{
@@ -62,6 +64,7 @@ header .top #IconoMenu2{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    padding-top: 10px;
 }
 .DivPromocion img{
     width: 120px;
@@ -81,7 +84,7 @@ header .top #IconoMenu2{
 }
 
 .wave2{
-    background-color: blueviolet;
+    background-color: rgb(0, 128, 111);
 }
 /*sección noticias*/
 .noticias {
@@ -106,12 +109,20 @@ header .top #IconoMenu2{
     background-color:hsla(182, 25%, 50%, 0.801);
     padding: 10px;
     border-radius: 25px;
+    
 }
 .noticias article img{
     height: 100px;
     width: 100px;
     border-radius: 20%;
     border-style: solid;
+    align-self: center;
+    transition:0.5s;
+}
+.noticias article img:hover{
+    
+    height: 120px;
+    width: 120px;
 }
 .noticias article div{
     display: flex;
@@ -126,7 +137,9 @@ header .top #IconoMenu2{
 }
 
 /*sección noticias*/
-
+.wave3{
+    background-color: brown;
+}
 /*Consejos*/
 .consejos{
     background-color: cadetblue;
@@ -159,7 +172,11 @@ header .top #IconoMenu2{
     border-radius:40%;
     width: 250px;
     height: 150px;
-    
+    transition: 0.7s;
+}
+.consejos div img:hover{
+    width: 265px;
+    height: 170px;
 }
 .consejos div button{
 
@@ -180,10 +197,13 @@ header .top #IconoMenu2{
     color:#000;
 }
 /*Consejos*/
+.wave4{
+    background-color: cadetblue;
+}
 /*Publicate Con Nosotros*/
 
 .publicateCon{
-    background-color: orangered;
+    background-color:#1ecc7b ;
     display: flex;
     flex-direction: column;
 }
@@ -204,9 +224,12 @@ header .top #IconoMenu2{
     text-align: center;
 }
 /*Publicate Con Nosotros*/
+.wave5{
+    background-color: #1ecc7b;
+}
 /*Plan publicitario*/
 .PlanPublicitario{
-    background-color: hsla(182, 25%, 50%, 0.801);
+    background-color: hsl(182, 25%, 50%);
     text-align: center
 }
 /*Animación cuadro de texto Publicidad*/
@@ -235,21 +258,21 @@ header .top #IconoMenu2{
 #slide1:hover{
     background-color: hsla(229, 59%, 41%, 0.555);
     border-radius: 90%;
-    width: 300px;
+    width: 200px;
     height: 300px;
     overflow: hidden;
 }
 #slide2:hover{
     background-color: hsla(229, 59%, 41%, 0.555);
     border-radius: 90%;
-    width: 300px;
+    width: 200px;
     height: 300px;
     overflow: hidden;
 }
 #slide3:hover{
     background-color: hsla(229, 59%, 41%, 0.555);
     border-radius: 90%;
-    width: 300px;
+    width: 200px;
     height: 300px;
     overflow: hidden;
 }
@@ -266,6 +289,7 @@ footer{
     flex-direction: column;
     text-align: center;
     font-size: 20px;
+    
 }
 footer div i{
     padding: 7px;
@@ -275,6 +299,6 @@ footer a{
     padding-bottom: 7px;
 }
 .wave{
-    background-color:hsla(182, 25%, 50%, 0.801);
+    background-color:hsl(182, 25%, 50%);
 }
 /*footer*/
