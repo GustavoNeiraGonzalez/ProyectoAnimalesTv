@@ -135,7 +135,24 @@ header .top #IconoMenu2{
     font-size: 13px;
 
 }
+.noticias div button{
 
+    border:none;
+    height: 40px;
+    width: 50%;
+    color:white;
+    background-color: rgba(255, 0, 0, 0.68);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #f9e506;
+    transition: ease-out 0.8s;
+    outline:none;
+}
+
+.noticias div button:hover {
+    box-shadow:inset 170px 0 0 0 #f9e506;
+    cursor:pointer;
+    color:#000;
+}
 /*sección noticias*/
 .wave3{
     background-color: brown;
@@ -302,3 +319,13 @@ footer a{
     background-color:hsl(182, 25%, 50%);
 }
 /*footer*/
+
+@media all and (min-width:1000px){
+    header .top #IconoMenu2{
+        color:white;
+        position:absolute;
+        right: 5%;
+        top:3%;
+        font-size: 25px;
+    }
+}

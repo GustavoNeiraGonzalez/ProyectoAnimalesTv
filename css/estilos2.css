@@ -25,4 +25,40 @@
 }
 .ArtProgramacion{
     background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+}
+.ArtProgramacion #ImagenesTop{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.ArtProgramacion div img{
+    width: 45%;
+    height: 150px;
+    max-width: 350px;
+    padding-bottom: 15px;
+    
+}
+.ArtProgramacion div #ImagenMedio{
+    width: 75%;
+    max-width: 600px;
+    height: 400px;
+}
+
+.ArtProgramacion #ImagenMid{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.ArtProgramacion #ImagenesBottom{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.waveV1{
+    background-color: greenyellow;
 }
