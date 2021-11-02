@@ -78,3 +78,17 @@ main{
     padding: 0px;
     margin:0px;
 }
+.SectEqVentas{
+    display: flex;
+    flex-direction: column;  
+    justify-content: center;
+}
+.EqVentas{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    background-color: chocolate;
+}
+.EqVentas img{
+
+}
