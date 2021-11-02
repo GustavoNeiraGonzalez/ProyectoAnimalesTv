@@ -5,8 +5,9 @@
     position:absolute;
     top:100px; /*Este top es para que empieze abajo de el header*/
     left:0;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
+    border-end-end-radius: 30px;
     background-image: linear-gradient(to right bottom, #00ff59, #00ef6d, #00de7b, #00cd83, #00bc88, #00bc86, #00bc84, #00bc82, #00ce77, #00df65, #1fef48, #4eff00);
     transition:all 0.2s;
     transform:translateX(-100%);
