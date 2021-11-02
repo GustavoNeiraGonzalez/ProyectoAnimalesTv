@@ -62,11 +62,17 @@
 .waveV1{
     background-color: greenyellow;
 }
-
+.waveV2{
+    background-color: cadetblue;
+}
 .ArtPublicateVideos{
     background-color: greenyellow;
     padding-bottom: 20px;
-    
+
+}
+.ArtPublicateVideos2{
+    background-color: cadetblue;
+    padding-bottom: 20px;
 }
 main{
     padding: 0px;

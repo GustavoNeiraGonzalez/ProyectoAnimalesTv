@@ -163,7 +163,7 @@ header .top #IconoMenu2{
     height: auto;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-bottom: 15px;
     text-align: center;
 }
