@@ -9,6 +9,8 @@
                 document.querySelector("main").addEventListener("click",CambiarCheckbox);
         }
         /* */
-
+        function ola(){
+                console.log("olaa")
+        }
 
 

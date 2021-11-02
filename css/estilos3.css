@@ -1,0 +1,74 @@
+.QuienesSomos{
+    display: flex;
+    flex-direction: column;
+}
+.QuienesSomos div{
+    background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.QuienesSomos img{
+    width: 200px;
+    align-self: center;
+}
+.QuienesSomos div h4{
+    font-size: 40px;
+    align-self: center;
+}
+.QuienesSomos div p{
+    text-align: center;
+    color:rgb(95, 5, 5);
+}
+.QuienesSomos div #ColorTitu{
+    color:rgba(226, 6, 6, 0.774);
+}
+.ArtProgramacion{
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+}
+.ArtProgramacion #ImagenesTop{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.ArtProgramacion div img{
+    width: 45%;
+    height: 150px;
+    max-width: 350px;
+    padding-bottom: 15px;
+    
+}
+.ArtProgramacion div #ImagenMedio{
+    width: 75%;
+    max-width: 600px;
+    height: 400px;
+}
+
+.ArtProgramacion #ImagenMid{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.ArtProgramacion #ImagenesBottom{
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.waveV1{
+    background-color: greenyellow;
+}
+
+.ArtPublicateVideos{
+    background-color: greenyellow;
+    padding-bottom: 20px;
+    
+}
+main{
+    padding: 0px;
+    margin:0px;
+}
