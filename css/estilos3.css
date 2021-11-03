@@ -59,6 +59,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly
 }
+/*Modificación carrusel publicate con nosotros, (posición y background)*/
 .waveV1{
     background-color: greenyellow;
 }
@@ -68,27 +69,74 @@
 .ArtPublicateVideos{
     background-color: greenyellow;
     padding-bottom: 20px;
-
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.ArtPublicateVideos .ArtPublicateVideosTexto{
+    width: 100%;
+    text-align: center;
 }
 .ArtPublicateVideos2{
     background-color: cadetblue;
     padding-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
+.ArtPublicateVideos2 .ArtPublicateVideos2Texto{
+    width: 100%;
+    text-align: center;
+}
+/*Modificación carrusel publicate con nosotros, (posición y background)*/
 main{
     padding: 0px;
     margin:0px;
 }
+/*html equipo ventas*/
 .SectEqVentas{
     display: flex;
-    flex-direction: column;  
+    flex-wrap: wrap;
     justify-content: center;
+    background-color: cadetblue;
+}
+.SectEqVentas h3{
+    width: 100%;
+    text-align: center;
 }
 .EqVentas{
     width: 80%;
     display: flex;
     justify-content: center;
-    background-color: chocolate;
 }
-.EqVentas img{
-
+.contacto{
+    background-color: cadetblue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contactoDiv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+}
+.contacto h3{
+    width: 100%;
+    text-align: center;
+}
+.contacto .contactoDiv #textoContacto{
+    background-color: hsla(183, 22%, 64%, 0.514);
+    border-radius: 40px;
+}
+.contacto .contactoDiv #textoContacto form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.contacto .contactoDiv #textoContacto input{
+    width: 55%;
+    height: 30px;
+    border-radius: 25px;
 }
