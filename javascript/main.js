@@ -9,8 +9,11 @@
                 document.querySelector("main").addEventListener("click",CambiarCheckbox);
         }
         /* */
-        function ola(){
-                console.log("olaa")
+
+        function ocultarTexto(y){
+                document.getElementById(y).style.color="red";
         }
 
-
+        function cambiarTextoContacto(x,y){
+                document.getElementById(x).addEventListener("click",ocultarTexto(y))
+        }

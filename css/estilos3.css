@@ -135,8 +135,33 @@ main{
     justify-content: center;
     
 }
+.contacto .contactoDiv #textoContacto form textarea{
+    border-radius: 13px;
+    border-style: solid;
+    border-color: black;
+    margin-bottom: 15px;
+    resize: none;
+}
+.contacto .contactoDiv #textoContacto form p{
+    position: absolute;
+}
+.contacto .contactoDiv #textoContacto form #pTextarea{
+    top:290px;
+}
+.contacto .contactoDiv #textoContacto form #pTextarea{
+    top:290px;
+}
+.contacto .contactoDiv #textoContacto form #pNombre{
+    top:135px;
+}
+.contacto .contactoDiv #textoContacto form #pCorreo{
+    top:195px;
+}
+
 .contacto .contactoDiv #textoContacto input{
-    width: 55%;
+    width: 65%;
     height: 30px;
     border-radius: 25px;
+    margin-top:10px;
+    margin-bottom: 15px;
 }
