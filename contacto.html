@@ -47,20 +47,23 @@
                     <h3>Contacto</h3>
                     <div id="textoContacto">
                         <form class="form">
-                            <p id="pNombre">Inserte Nombre</p>
-                            <input type="text" required id="InNombre">
-                            <p id="pCorreo">Inserte Correo</p>
-                            <input type="email" required id="InEmail">
-                            <p id="pTextarea">Inserte Mensaje</p>
-                            <textarea cols="35" rows="10" maxlength="250" required id="textCorreo"></textarea>    
+                            
+                            <input type="text" required id="InNombre" placeholder="inserte Nombre">
+                            <input type="email" required id="InEmail" placeholder="Inserte Correo">
+                            <textarea cols="35" rows="10" maxlength="250" required id="textCorreo" placeholder="Ingrese Mensaje"></textarea>
+                            <button>Leer más</button>    
                         </form>
                     </div>
-                </div>
-                <div>
-                    <h3>Quieres trabajar con nosotros? haz click en la imagen</h3>
-                </div>
-                <div>
 
+                </div>
+                <div id="imagenesLinkContacto">
+                    <h3>Quieres trabajar con nosotros? haz click en la imagen</h3>
+                    <a href=""><img src="https://static.wixstatic.com/media/4ef24d_17a1c5b28c674c0f9b0122dd8e2ef846~mv2.png/v1/fill/w_237,h_226,al_c,q_85,usm_0.66_1.00_0.01/CV.webp" alt=""></a>
+                    <a href=""><img src="https://static.wixstatic.com/media/4ef24d_1ef127c9b4334c9fa3ae3877fb8645eb~mv2.png/v1/fill/w_306,h_307,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_1ef127c9b4334c9fa3ae3877fb8645eb~mv2.webp" alt=""></a>
+                </div>
+                <div id="imagenesNoLinkContacto">
+                    <img src="https://static.wixstatic.com/media/4ef24d_c2d8fa40472341b285e464190b0df728~mv2.png/v1/fill/w_447,h_317,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_c2d8fa40472341b285e464190b0df728~mv2.webp" alt="">
+                    <img src="https://static.wixstatic.com/media/4ef24d_83afb797a4fa4ae48ce6c776ac0cf495~mv2.jpg/v1/fill/w_237,h_226,al_c,q_80,usm_0.66_1.00_0.01/4ef24d_83afb797a4fa4ae48ce6c776ac0cf495~mv2.webp" alt="">
                 </div>
             </section>
             <article class="ArtPublicateVideos2">
@@ -112,8 +115,7 @@
         <script>
             CambiarCheckbox();
             clickMain();
-            
-            cambiarTextoContacto("InNombre","pNombre");
+
         </script>
 </body>
 

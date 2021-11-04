@@ -109,6 +109,7 @@ main{
     display: flex;
     justify-content: center;
 }
+/*Contacto */
 .contacto{
     background-color: cadetblue;
     display: flex;
@@ -141,27 +142,55 @@ main{
     border-color: black;
     margin-bottom: 15px;
     resize: none;
+    text-align: center;
+    width: 60%;
 }
-.contacto .contactoDiv #textoContacto form p{
-    position: absolute;
-}
-.contacto .contactoDiv #textoContacto form #pTextarea{
-    top:290px;
-}
-.contacto .contactoDiv #textoContacto form #pTextarea{
-    top:290px;
-}
-.contacto .contactoDiv #textoContacto form #pNombre{
-    top:135px;
-}
-.contacto .contactoDiv #textoContacto form #pCorreo{
-    top:195px;
-}
+
+
+
 
 .contacto .contactoDiv #textoContacto input{
     width: 65%;
     height: 30px;
-    border-radius: 25px;
+    border-radius: 15px;
     margin-top:10px;
     margin-bottom: 15px;
+    text-align: center;
 }
+.contactoDiv h3{
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+.contacto .contactoDiv #textoContacto form button{
+    width: 40%;
+}
+#imagenesLinkContacto{
+    display: flex;
+    width: 80%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+#imagenesLinkContacto h3{
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+#imagenesLinkContacto img{
+    height: 220px;
+    border-radius:40px;
+    border-style: solid;
+    border-color: black;
+}
+#imagenesNoLinkContacto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 70%;
+}
+#imagenesNoLinkContacto img{
+    height: 220px;
+    border-radius:40px;
+}
+/*Contacto */

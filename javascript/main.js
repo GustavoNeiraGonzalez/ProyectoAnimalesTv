@@ -10,10 +10,15 @@
         }
         /* */
 
-        function ocultarTexto(y){
-                document.getElementById(y).style.color="red";
+        /*function ocultarTexto(y,x){
+                if(document.getElementById(x).value.length ==1){
+                        document.getElementById(y).style.display="block";
+                }else{
+                        document.getElementById(y).style.display="none";
+                }
         }
-
-        function cambiarTextoContacto(x,y){
-                document.getElementById(x).addEventListener("click",ocultarTexto(y))
-        }
+        function cambiarTextoContacto(x,y){document.getElementById(x).addEventListener("keydown",function()
+        {
+                 ocultarTexto(y,x);
+        });
+        }*/
