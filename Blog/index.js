@@ -29,6 +29,9 @@ const posts = [
 ];
 
 app.get('/',(req, res) => res.render('home',{posts}));
+app.get('/posts/:handle',(req, res) =>{
+    res.render(`posts/${req.params.handle}`)
+});
 
 app.listen(app.get('port'), function(){
     console.log('Servidor escuchando %d',app.get('port'))
