@@ -1,9 +1,0 @@
-extends layout 
-
-block content
-    h1 Aqui los posts
-
-    each post in posts 
-        div
-            h1 #{post.titulo}
-            a(href=`/post/${post.handle}`) Ver post
