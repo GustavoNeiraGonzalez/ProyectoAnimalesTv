@@ -3,8 +3,12 @@ const path = require('path');
 
 var app = express();
 app.set('port',3000);
-app.set('vista',path.join(__dirname, 'vista'));
+app.set('views',path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
+
+
+app.use(express.static(__dirname + '/public')); //Esto indica que la carpeta publica se puede utilizar,
+//y la queremos utilizar para darle estilo al pug//
 
 const posts = [
     {
@@ -21,11 +25,13 @@ const posts = [
         handle: 'analiticas-para-tu-blog',
         titulo: 'como instalar y trackear a tu audiencia',
         descripcion: 'Te muestro cómo trackear lo que tu audiencia lee'
-    }
-]
+    },
+];
 
-app.get('/',(req, res) => res.render('home'));
+app.get('/',(req, res) => res.render('home',{posts}));
 
 app.listen(app.get('port'), function(){
     console.log('Servidor escuchando %d',app.get('port'))
 });
+
+
