@@ -4,8 +4,8 @@ block content
 
     h1 Aqui los posts
 
-    each post in posts 
+    each post, i in posts 
         div    
             h1 #{post.titulo}
-            a(href=`/posts/${post.handle}`) ver post 
+            a(href=`/posts/${i}/${post.handle}`) ver post
 

@@ -29,8 +29,12 @@ const posts = [
 ];
 
 app.get('/',(req, res) => res.render('home',{posts}));
-app.get('/posts/:handle',(req, res) =>{
-    res.render(`posts/${req.params.handle}`)
+
+app.get('/posts/:i/:handle',(req, res) =>{ // Dos puntos en la URL creará una variable (ejemplo --> :NOMBRE_VARIABLE_1/:NOMBRE_VARIABLE_2 )
+    res.render(`posts/${req.params.handle}`, { // Para usar la variable escribir req.params.NOMBRE_VARIABLE
+        titulo: posts[req.params.i].titulo, 
+        desc: posts[req.params.i].descripcion
+    })
 });
 
 app.listen(app.get('port'), function(){
