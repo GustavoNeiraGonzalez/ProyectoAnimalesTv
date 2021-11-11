@@ -22,3 +22,10 @@
                  ocultarTexto(y,x);
         });
         }*/
+        function comparar(){
+                window.addEventListener('resize', function(){
+                        if(this.document.getElementById("imagenNoticia").heig){
+
+                        }
+                      });
+        }

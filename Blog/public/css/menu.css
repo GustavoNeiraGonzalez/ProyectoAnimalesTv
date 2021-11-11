@@ -1,0 +1,71 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+h3,h4,h2{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 17px;
+}
+p{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+header .top{
+    background-color: #333;
+    height: 100px;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+
+header .ImagenLogo{
+    height: 104px;
+    
+}
+
+header .top #IconoMenu{
+    color:white;
+    position:absolute;
+    right: 2.5%;
+    top:3%;
+    font-size:25px;
+}
+header .top #IconoMenu2{
+    color:white;
+    position:absolute;
+    right: 9%;
+    top:3%;
+    font-size: 25px;
+}
+
+#menu-bar{
+    display:none;
+}
+.menu{
+    position:absolute;
+    top:100px; /*Este top es para que empieze abajo de el header*/
+    left:0;
+    width: auto;
+    height: auto;
+    border-end-end-radius: 30px;
+    background-image: linear-gradient(to right bottom, #00ff59, #00ef6d, #00de7b, #00cd83, #00bc88, #00bc86, #00bc84, #00bc82, #00ce77, #00df65, #1fef48, #4eff00);
+    transition:all 0.2s;
+    transform:translateX(-100%);
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 25px;
+}
+.menu a{
+    color:black;
+    height: 30px;
+    max-height: 40px;
+    padding:10px;
+    border-bottom:1px solid rgba(255, 255, 255, 0.5);/*Para hacer un borde de color blanco hacia abajo*/
+
+}
+.menu a:hover {
+    background:rgba(255,255,255,0.3)/*al pasar el mouse cada a, cambiara un poco su color*/
+}
+#menu-bar:checked ~ .menu{
+    transform:translateX(0%)
+}

@@ -7,5 +7,6 @@ block content
     each post, i in posts 
         div    
             h1 #{post.titulo}
+            p #{post.descripcion}
             a(href=`/posts/${i}/${post.handle}`) ver post
 

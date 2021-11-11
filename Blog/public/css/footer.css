@@ -1,0 +1,22 @@
+/*footer*/
+footer{
+    background: rgb(55,55,55);
+    background: linear-gradient(0deg, rgba(55,55,55,1) 0%, rgba(0,0,0,1) 100%);
+    color:white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 20px;
+    
+}
+footer div i{
+    padding: 7px;
+    font-size: 22px;
+}
+footer a{
+    padding-bottom: 7px;
+}
+.wave{
+    background-color:hsl(182, 25%, 50%);
+}
+/*footer*/
