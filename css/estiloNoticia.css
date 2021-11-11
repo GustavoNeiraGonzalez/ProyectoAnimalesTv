@@ -60,7 +60,9 @@ h1{
     text-align: end;
     text-decoration: none;
 } 
-
+#negrisimo{
+    font-weight: bold ;
+}
 
 @media all and (min-width:250px){
     .seccionNoticia #ContenidoNoticia  #imgTextoLado img{

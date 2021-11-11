@@ -4,9 +4,9 @@ head
   meta(http-equiv='X-UA-Compatible' content='IE=edge')
   meta(name='viewport' content='width=device-width, initial-scale=1.0')
   link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css' integrity='sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==' crossorigin='anonymous' referrerpolicy='no-referrer')
-  link(rel='stylesheet' href='css/menu.css')
-  link(rel='stylesheet' href='css/footer.css')
-  link(rel='stylesheet' href='css/estiloNoticia.css')
+  link(rel='stylesheet' href='/css/menu.css')
+  link(rel='stylesheet' href='/css/footer.css')
+  link(rel='stylesheet' href='/css/estiloNoticia.css')
   title Emisora De Radio | Mascotas Radio Tv
 header
   // logo
@@ -35,20 +35,21 @@ main
       h1 BROTE DE COVID-19 EN VISONES
       #imgTextoLado
         img#imagenNoticia(src='https://static.wixstatic.com/media/4ef24d_82a6c4867bc748d38190a4ad07425053~mv2.jpg/v1/fill/w_360,h_240,al_c,q_90/4ef24d_82a6c4867bc748d38190a4ad07425053~mv2.webp')
-        p
-          | Hace pocos d&iacute;as, las autoridades sanitarias de los Pa&iacute;ses Bajos han informado del contagio
-          | de varios visones en dos granjas situadas en la regi&oacute;n de Brabante Septentrional. Los visone pocos d&iacute;as,
-          | las autoridades sanitarias de los Pa&iacute;ses Bajos han informado del contagio de varios visones en dos
-          | granjas situadas en la regi&oacute;n de Brabante Septentrional. Los visones, de la misma familia de los
-          | hurones, ser&iacute;an el primer caso de cont
-      span
-        | A trav&eacute;s de un comunicado, la ministra Holandesa de Agricultura, Carola Schouten, recalc&oacute; que, las
-        | autoridades asumen que el contagio se produjo de humanos a animales. Se realizaron pruebas a varios
-        | animales despu&eacute;s de que estos mostraran s&iacute;ntomas de problemas respiratorios y porque hab&iacute;a una tasa
-        | de mortalidad m&aacute;s alta de lo normal. Adem&aacute;s, algunos de los empleados de ambas granjas dieron
-        | positivo. Aun as&iacute;, se asegur&oacute; que la investigaci&oacute;n sigue en curso para determinar exactamente la
-        | fuente de infecci&oacute;n.
-      span
+        each i in texto
+            br
+            
+            if i.substr(0,1)=='*' 
+                span#negrisima #{i.substr(1,i.lenght)}TOA NEGRA OE ZI 
+                br
+            else
+                span #{i}
+            
+            br
+
+          
+        
+        span 
+        span
         | En estos pa&iacute;ses, las granjas albergan a estos animales para su cr&iacute;a, por su pelaje y se vende en
         | China, Corea, Grecia y Turqu&iacute;a, por lo que, pese a que el ministerio, citando el consejo de las
         | autoridades nacionales de salud advirti&oacute; que las posibilidades de propagaci&oacute;n a humanos son

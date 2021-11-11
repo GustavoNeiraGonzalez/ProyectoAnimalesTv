@@ -14,7 +14,9 @@ const posts = [
     {
         handle: 'brote-de-covid-19-en-visones',
         titulo: 'El blog mas rápido',
-        descripcion: 'En este post te muestro como hacer tu blog mas rapido'
+        descripcion: 'En este post te muestro como hacer tu blog mas rapido',
+        texto:['asd','*asd','asd'],
+
     },
     {
         handle: 'seo-para-tu-blog',
@@ -30,11 +32,13 @@ const posts = [
 
 app.get('/',(req, res) => res.render('home',{posts}));
 
+
 app.get('/posts/:i/:handle',(req, res) =>{ // Dos puntos en la URL creará una variable (ejemplo --> :NOMBRE_VARIABLE_1/:NOMBRE_VARIABLE_2 )
     //Al poner el :i indica que i es variable, entonces al ejecutar varias veces incrementará en 1 valiendo inicialmente 0
-    res.render(`posts/${req.params.handle}`, { // Para usar la variable escribir req.params.NOMBRE_VARIABLE
+    res.render(`plantillaPost`, { // Para usar la variable escribir req.params.NOMBRE_VARIABLE
         titulo: posts[req.params.i].titulo, 
-        desc: posts[req.params.i].descripcion
+        desc: posts[req.params.i].descripcion,
+        texto: posts[req.params.i].texto
     })
 });
 
