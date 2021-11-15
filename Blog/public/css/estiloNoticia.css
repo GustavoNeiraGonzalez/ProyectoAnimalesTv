@@ -27,7 +27,6 @@ main{
     display: flex;
     flex-wrap: wrap;
     text-align: justify;
-    
 }
 h1{
     font:normal normal normal 40px/50px avenir-lt-w01_85-heavy1475544,sans-serif;
@@ -40,8 +39,8 @@ h1{
 }
 .seccionNoticia #ContenidoNoticia  #imgTextoLado img{
     height: 120px;
-    border-radius: 40%;
     padding-top: 10px;
+    border-radius: 30%;
     padding-right: 5px;
     float:left; /*Float para que el texto a la derecha al superar el largo de imagen, empieze tambien a 
     escribir desde el inicio de la derecha, y no solo desde el fin de la imagen*/
@@ -70,7 +69,7 @@ h1{
     .seccionNoticia #ContenidoNoticia  #imgTextoLado img{
         height: 150px;
         width: 150px;
-        border-radius: 50%;
+        border-radius: 20%;
         padding-top: 10px;
         padding-right: 5px;
         float:left; /*Float para que el texto a la derecha al superar el largo de imagen, empieze tambien a 
@@ -80,20 +79,22 @@ h1{
 @media all and (min-width:650px){
     .seccionNoticia #ContenidoNoticia  #imgTextoLado img{
         height: 150px;
-        border-radius: 50%;
+        border-radius: 20%;
         padding-top: 10px;
         padding-right: 5px;
         float:left; /*Float para que el texto a la derecha al superar el largo de imagen, empieze tambien a 
         escribir desde el inicio de la derecha, y no solo desde el fin de la imagen*/
     }
-    
+    .seccionNoticia #ContenidoNoticia  #imgTextoLado p{
+        font-size: 17px;
+    }
 }
 
 
 @media all and (min-width:1100px){
     .seccionNoticia #ContenidoNoticia  #imgTextoLado img{
         height: 150px;
-        border-radius: 50%;
+        border-radius: 20%;
         padding-top: 10px;
         padding-right: 5px;
         float:left; /*Float para que el texto a la derecha al superar el largo de imagen, empieze tambien a 

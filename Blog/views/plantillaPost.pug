@@ -32,10 +32,10 @@ header
 main
   .seccionNoticia
     #ContenidoNoticia
-      h1 BROTE DE COVID-19 EN VISONES
+      h1 #{titulo}
       #imgTextoLado
-        img#imagenNoticia(src='https://static.wixstatic.com/media/4ef24d_82a6c4867bc748d38190a4ad07425053~mv2.jpg/v1/fill/w_360,h_240,al_c,q_90/4ef24d_82a6c4867bc748d38190a4ad07425053~mv2.webp')
-        p #{textoLadoImagen} 
+        img#imagenNoticia(src=`${linkImagen}`)
+        p #{textoLadoImagen}
       each i in texto
           if i.substr(0,1)=='*' 
               span#negrisima #{i.substr(1,i.lenght)}

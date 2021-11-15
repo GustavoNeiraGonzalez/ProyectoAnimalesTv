@@ -4,7 +4,7 @@ html
         link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css' integrity='sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==' crossorigin='anonymous' referrerpolicy='no-referrer')
         link(rel='stylesheet' href='/css/menu.css')
         link(rel="stylesheet", href="/css/footer.css")
-        link(rel="stylesheet", href="/css/estiloPrincipal.css")
+        link(rel="stylesheet", href="/css/estiloNoticia.css")
         title Emisora De Radio | Mascotas Radio Tv
     header
         .top
@@ -27,32 +27,4 @@ html
                 a(href='') Saludos de famosos
                 a(href='') Equipos de ventas
                     
-    body
-        main
-            div.entradas
-                a(href="") Todas las entradas
-                a(href="") Consejos
-                a(href="") Noticias
-
-            each post, i in posts 
-                div.PrincipalNoticia
-                    img(src=`${post.linkImagen}`, alt="") 
-                    //utlizando un link dado en post para la imagen
-                    div
-                        a(href=`/posts/${i}/${post.handle}`) 
-                            h1 #{post.titulo}
-                            p #{post.descripcion}
-                                //gracias a i, navegas entre los post fijandote en su posición, para hacerlo automaticamente
-    footer
-        h5 S&Iacute;GUENOS EN :
-        div
-            // div redessociales
-            i.fab.fa-facebook
-            i.fab.fa-instagram
-            i.fab.fa-youtube
-        a(href='') mascotasradiotv@gmail.com
-        a(href='')
-            img(src='https://static.wixstatic.com/media/4ef24d_232d9a11cbea49658eb4dcc3e88f52ce~mv2.png/v1/fill/w_95,h_30,al_c,q_85/4ef24d_232d9a11cbea49658eb4dcc3e88f52ce~mv2.webp' alt='')
-        a(href='')
-            img(src='https://static.wixstatic.com/media/4ef24d_c4bf7ff8b9844df4b913ac3fdd4ff90a~mv2.png/v1/fill/w_95,h_30,al_c,q_85/4ef24d_c4bf7ff8b9844df4b913ac3fdd4ff90a~mv2.webp' alt='')
-    
+        block content
