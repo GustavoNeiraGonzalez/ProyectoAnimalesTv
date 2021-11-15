@@ -11,39 +11,64 @@ main{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;    
-
+    padding-bottom: 15px;
 }
 main .entradas{
     width: 80%;
     text-align: center;
     padding-top: 10px;
 
+
 }
 main .entradas a{
     padding-right: 20px;
+    text-decoration: none;
+    transition: 0.6s;
+    font-family:fantasy;
 }
+main .entradas:hover .entradaRoja{
+    color:rgb(52, 109, 155);
+}
+main .entradas:hover .entradaAzul{
+    color:brown;
+}
+main .entradas .entradaRoja{
+    color:brown;
+}
+
+
+main .entradas .entradaAzul{
+    color:rgb(52, 109, 155);
+}
+
+
+
 .PrincipalNoticia{
-width: 80%;
-display:flex;
-border-style: solid;
-margin-top: 10px;
-margin-bottom: 5px;
-border-radius: 10px;
+    border-color: rgba(39, 37, 37, 0.685);
+    width: 80%;
+    display:flex;
+    border-style: solid;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
 }
 .PrincipalNoticia div{
     width: 90%;
 }
 
-.PrincipalNoticia img{
-    width: 30%;
-    padding-right: 20px;
-}
+
 .PrincipalNoticia div a{
     text-decoration: none;
 }
 .PrincipalNoticia div a:hover{
     text-decoration: underline;
 
+}
+.PrincipalNoticia img{
+    width: 100px;
+    height: 140px;
+    padding-right: 20px;    
+    align-self: center;
 }
 .PrincipalNoticia div a:link{
     color:black;
@@ -52,9 +77,78 @@ border-radius: 10px;
     font:normal normal normal 40px/50px avenir-lt-w01_85-heavy1475544,sans-serif;
     padding-top: 10px;
     color:black;
-    
 }
 .PrincipalNoticia div a p{
     padding-top: 10px;
     color: black;
+    padding-bottom: 11px;
+}
+
+@media all and (min-width:220px){
+    .PrincipalNoticia img{
+        width: 100px;
+        height: 140px;
+        padding-right: 20px;    
+        align-self: center;
+    }
+    .PrincipalNoticia div a h1{
+        font:normal normal normal 17px/27px avenir-lt-w01_85-heavy1475544,sans-serif;
+    }
+    .PrincipalNoticia{
+        width: 90%;
+        display:flex;
+        border-style: solid;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        }
+    p{
+        font-size: 13px;
+    }
+    main .entradas a{
+        font-size: 11px;
+    }
+}
+@media all and (min-width:650px){
+    .PrincipalNoticia img{
+        width: 160px;
+        height: 160px;
+        padding-right: 20px;    
+        align-self: center;
+        border-radius: 10px;
+    }
+    .PrincipalNoticia div a h1{
+        font:normal normal normal 25px/35px avenir-lt-w01_85-heavy1475544,sans-serif;
+    }
+    main .entradas a{
+        font-size: 13px;
+    }
+}
+
+@media all and (min-width:920px){
+    .PrincipalNoticia img{
+        width: 200px;
+        height: 200px;
+        padding-right: 20px;    
+        align-self: center;
+        border-radius: 10px;
+    }
+    .PrincipalNoticia div a h1{
+        font:normal normal normal 28px/38px avenir-lt-w01_85-heavy1475544,sans-serif;
+    }
+    .PrincipalNoticia div a p{
+        font-size: 18px;
+    }
+    .PrincipalNoticia{
+        width: 60%;
+        display:flex;
+        border-style: solid;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        border-radius: 10px;
+        margin-right: 10px;
+        }
+        main .entradas a{
+            font-size: 15px;
+        }
 }
