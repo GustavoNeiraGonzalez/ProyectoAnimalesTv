@@ -9,7 +9,7 @@ app.set('view engine', 'pug');
 
 app.use(express.static(__dirname + '/public')); //Esto indica que la carpeta publica se puede utilizar,
 //y la queremos utilizar para darle estilo al pug//
-
+//sección plantillanoticias
 const posts = [
     {
         handle: 'bro-de-covid-19-en-visones',
@@ -90,7 +90,7 @@ const posts = [
         //
     },
 ];
-
+//sección plantilla noticia
 app.get('/',(req, res) => res.render('home',{posts}));
 
 
@@ -105,6 +105,32 @@ app.get('/posts/:i/:handle',(req, res) =>{ // Dos puntos en la URL creará una v
     })
 });
 
+const vetYCom = [
+    {
+        //de esta forma podemos darle formato a algo, por ejemplo los 1 tendran unas caracteristicas
+        //como 2 botones con sus redes sociales, y el 2 puede ser solo texto con whatsapp y demás   
+        1:[{
+            handle:"cerro-Navia",
+            linkIcono: 'https://static.wixstatic.com/media/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.jpg/v1/fill/w_149,h_149,al_c,q_80,usm_0.66_1.00_0.01/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.webp',
+            linkImagenFondo:'',
+            whatsapp:'',
+            linkAdicional:[''],
+        },{
+            
+        }
+        ],
+        2:[{
+
+        }]
+
+
+    },
+    {
+
+    }
+]
+
 app.listen(app.get('port'), function(){
     console.log('Servidor escuchando %d',app.get('port'))
 });
+
