@@ -108,22 +108,22 @@ app.get('/posts/:i/:handle',(req, res) =>{ // Dos puntos en la URL creará una v
 const vetYCom = [
     {
         //de esta forma podemos darle formato a algo, por ejemplo los 1 tendran unas caracteristicas
-        //como 2 botones con sus redes sociales, y el 2 puede ser solo texto con whatsapp y demás   
+        //como 2 botones con sus redes sociales, y el 2 puede ser solo texto con whatsapp y demás 
+        handle:"cerro-Navia",  
         1:[{
-            handle:"cerro-Navia",
             linkIcono: 'https://static.wixstatic.com/media/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.jpg/v1/fill/w_149,h_149,al_c,q_80,usm_0.66_1.00_0.01/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.webp',
-            linkImagenFondo:'',
-            whatsapp:'',
-            linkAdicional:[''],
+            linkImagenFondo:'https://static.wixstatic.com/media/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.png/v1/fill/w_603,h_311,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.webp',
+            whatsapp:'22 815 55 88',
+            texoNegrita:['Nuestros horarios de atención'],
+            textoNormal:['lunes a sábado de 10:00-15:00 y 16:00-18:00','(Colación de 15:00-16:00)'],
+            linkRedireccionar:['http://www.integravet.cl/']
         },{
-            
+
         }
         ],
         2:[{
 
         }]
-
-
     },
     {
 
