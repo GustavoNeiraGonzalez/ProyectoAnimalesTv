@@ -112,21 +112,24 @@ const vetYCom = [
         handle:"cerro-Navia",  
         1:[{
             linkIcono: 'https://static.wixstatic.com/media/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.jpg/v1/fill/w_149,h_149,al_c,q_80,usm_0.66_1.00_0.01/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.webp',
+            linkFondo:'https://static.wixstatic.com/media/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.png/v1/fill/w_603,h_311,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.webp',
+            linkImagenDentroFondo:'https://static.wixstatic.com/media/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.jpg/v1/fill/w_149,h_149,al_c,q_80,usm_0.66_1.00_0.01/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.webp',
+            whatsapp:'22 815 55 88',
+            texoNegrita:['Nuestros horarios de atención'],
+            textoNormal:['lunes a sábado de 10:00-15:00 y 16:00-18:00','(Colación de 15:00-16:00)'],
+            linkRedireccionar:['http://www.integravet.cl/']
+        }]
+    },
+    {
+        handle:"Cerrillos",
+        1:[{
+            linkIcono: 'https://static.wixstatic.com/media/4ef24d_f5fb6a594cc34375b97eb4078396949b~mv2.png/v1/crop/x_0,y_0,w_334,h_124/fill/w_239,h_90,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_f5fb6a594cc34375b97eb4078396949b~mv2.webp',
             linkImagenFondo:'https://static.wixstatic.com/media/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.png/v1/fill/w_603,h_311,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.webp',
             whatsapp:'22 815 55 88',
             texoNegrita:['Nuestros horarios de atención'],
             textoNormal:['lunes a sábado de 10:00-15:00 y 16:00-18:00','(Colación de 15:00-16:00)'],
             linkRedireccionar:['http://www.integravet.cl/']
-        },{
-
-        }
-        ],
-        2:[{
-
         }]
-    },
-    {
-
     }
 ]
 
