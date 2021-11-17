@@ -4,8 +4,8 @@ main{
 }
 
 #vetCom1 #Fondo div{
-    background:rgba(255,255,255,0.1);
-    backdrop-filter: blur(4px);
+    background:hsla(75, 56%, 38%, 0.26);
+    backdrop-filter: blur(4px); /*backdrop para que se difumine lo que esta detras del contenedor, es decir lo que transparenta el baground al tener opacidad*/
     color:rgb(0, 0, 0);
     box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.5);
     background-image: url('https://static.wixstaticcom/media/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.png/v1/fill/w_603,h_311,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.webp');
@@ -19,6 +19,7 @@ main{
     bottom: 0;
     margin: auto;
 }
+
 #vetCom1 #Fondo dssiv{
     background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     width: 100%;
