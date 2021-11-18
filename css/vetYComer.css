@@ -50,6 +50,11 @@ main .vetCom1 button{
     display: flex;
     align-self: flex-end; 
 }
+
+main .vetCom1 button{
+    background-color: yellow;
+}
+
 main .vetCom1 img{
     max-width: 100%;
     display: flex;

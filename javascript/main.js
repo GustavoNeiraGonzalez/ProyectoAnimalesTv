@@ -29,3 +29,8 @@
                         }
                       });
         }
+        function Mostrar(){
+                document.getElementById("btnVetCom").addEventListener("click",function(){
+                        document.getElementById("carta").style.display="block";
+                })
+        }
