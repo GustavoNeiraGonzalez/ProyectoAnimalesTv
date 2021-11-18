@@ -1,4 +1,10 @@
 
+.ArtPublicateVideos2{
+    width: 80%;
+    text-align: center;
+    overflow:hidden ;
+    padding-top: 20px
+}
 .slider2{
     width:40%;
     margin:auto;
