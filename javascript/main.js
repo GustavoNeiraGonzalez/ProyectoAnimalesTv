@@ -30,7 +30,9 @@
                       });
         }
         function Mostrar(){
-                document.getElementById("btnVetCom").addEventListener("click",function(){
+                document.getElementById("btnVetCom").addEventListener("click", function(){
                         document.getElementById("carta").style.display="block";
-                })
+                        document.getElementById("Fondo").style.visibility="visible";
+                });
+                
         }

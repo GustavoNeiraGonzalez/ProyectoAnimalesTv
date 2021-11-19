@@ -43,17 +43,18 @@ main .vetCom1{
 
 }
 main .vetCom1 button{
+    
     border-radius: 35px;
     width: fit-content;
     padding-left: 10px;
     padding-right: 10px;
-    display: flex;
-    align-self: flex-end; 
+    text-align: center;
+    align-self: baseline; 
+    background-color: yellow;
+
 }
 
-main .vetCom1 button{
-    background-color: yellow;
-}
+
 
 main .vetCom1 img{
     max-width: 100%;
