@@ -29,10 +29,16 @@
                         }
                       });
         }
+        var botonVetYCom = document.querySelectorAll('.btnVetCom');
+
         function Mostrar(){
-                document.getElementById("btnVetCom").addEventListener("click", function(){
-                        document.getElementById("carta").style.display="block";
-                        document.getElementById("Fondo").style.visibility="visible";
-                });
-                
+                document.querySelectorAll('.btnVetCom').forEach(item => {
+                        item.addEventListener('click', event =>{
+                                document.getElementById("carta").style.display="block";
+                                document.getElementById("Fondo").style.visibility="visible";
+                                //handle click
+                                })
+                        })
+                      
         }
+        
