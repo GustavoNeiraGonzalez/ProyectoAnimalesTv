@@ -1,0 +1,86 @@
+
+.ArtPublicateVideos2{
+    width: 80%;
+    text-align: center;
+    overflow:hidden ;
+    padding-top: 20px
+}
+.slider2{
+    width:40%;
+    margin:auto;
+    
+}
+.slider2 ul{
+    display:flex;
+    padding: 0;
+    width: 600%;
+    
+    animation:cambios 10s infinite alternate; /*animacion de 20 segundos infinita que alterna (no se estanca)*/
+    
+}
+.slider2 li{ 
+    width: 50%;
+    list-style:none;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.slider2 img{
+    object-fit: cover;
+    max-width: 100px;
+}
+
+
+
+
+@keyframes cambios {/* CAMBIO SIGNIFICA el animation CAMBIO del .slider ul*/
+    0%{ margin-left:0;}
+    20%{ margin-left:0;}/* significa que de el 0% de 20 segundos al 20% de 0 segundos este la primera imagen*/
+    /*Durante este 5% de 20 segundos significará la transicion de una imagen a otra*/
+    /*esto equivale a 1 segundos*/
+    25%{margin-left:-100%;               }/* significa que del 25 al 45% de 20 segundos pasa la segunda imagen*/
+    45%{margin-left:-100%;}
+
+    50%{margin-left:-200%;}/* significa que del 25 al 45% de 20 segundos pasa la segunda imagen*/
+    70%{margin-left:-200%;}
+
+    75%{margin-left:-300%;}/* significa que del 25 al 45% de 20 segundos pasa la segunda imagen*/
+    85%{margin-left:-300%;}
+
+    90%{margin-left:-380%;}/* significa que del 25 al 45% de 20 segundos pasa la segunda imagen*/
+    100%{margin-left:-380%;}
+}
+
+@media all and (min-width:650px) {
+    .slider2 ul{
+        display:flex;
+        padding: 0;
+        width: 400%;
+        
+        animation:cambios 10s infinite alternate; /*animacion de 20 segundos infinita que alterna (no se estanca)*/
+        
+    }
+    .slider2 img{
+        object-fit: cover;
+        max-width: 170px;
+    }
+    @keyframes cambios {/* CAMBIO SIGNIFICA el animation CAMBIO del .slider ul*/
+        0%{ margin-left:0;}
+        20%{ margin-left:0;}/* significa que de el 0% de 20 segundos al 20% de 0 segundos este la primera imagen*/
+        /*Durante este 5% de 20 segundos significará la transicion de una imagen a otra*/
+        /*esto equivale a 1 segundos*/
+        25%{margin-left:-80%;               }/* significa que del 25 al 45% de 20 segundos pasa la segunda imagen*/
+        45%{margin-left:-80%;}
+    
+        50%{margin-left:-160%;}/* significa que del 25 al 45% de 20 segundos pasa la segunda imagen*/
+        70%{margin-left:-160%;}
+    
+        75%{margin-left:-240%;}/* significa que del 25 al 45% de 20 segundos pasa la segunda imagen*/
+        85%{margin-left:-240%;}
+    
+        90%{margin-left:-280%;}/* significa que del 25 al 45% de 20 segundos pasa la segunda imagen*/
+        100%{margin-left:-280%;}
+    }
+    
+}

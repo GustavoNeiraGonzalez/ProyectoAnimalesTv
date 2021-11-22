@@ -93,7 +93,6 @@ const posts = [
 //sección plantilla noticia
 app.get('/',(req, res) => res.render('Noticias',{posts}));
 
-
 app.get('/posts/:i/:handle',(req, res) =>{ // Dos puntos en la URL creará una variable (ejemplo --> :NOMBRE_VARIABLE_1/:NOMBRE_VARIABLE_2 )
     //Al poner el :i indica que i es variable, entonces al ejecutar varias veces incrementará en 1 valiendo inicialmente 0
     res.render(`plantillaPost`, { // Para usar la variable escribir req.params.NOMBRE_VARIABLE
@@ -105,49 +104,9 @@ app.get('/posts/:i/:handle',(req, res) =>{ // Dos puntos en la URL creará una v
     })
 });
 
-const vetYCom = [
-    {
-        //de esta forma podemos darle formato a algo, por ejemplo los 1 tendran unas caracteristicas
-        //como 2 botones con sus redes sociales, y el 2 puede ser solo texto con whatsapp y demás 
-        handle:"cerro-Navia",  
-        1:[{
-            linkIcono: 'https://static.wixstatic.com/media/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.jpg/v1/fill/w_149,h_149,al_c,q_80,usm_0.66_1.00_0.01/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.webp',
-            linkFondo:'https://static.wixstatic.com/media/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.png/v1/fill/w_603,h_311,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.webp',
-            linkImagenDentroFondo:'https://static.wixstatic.com/media/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.jpg/v1/fill/w_149,h_149,al_c,q_80,usm_0.66_1.00_0.01/4ef24d_783c41e58d334e00976c9c4b7739604d~mv2.webp',
-            whatsapp:'22 815 55 88',
-            texoNegrita:['Nuestros horarios de atención'],
-            textoNormal:['lunes a sábado de 10:00-15:00 y 16:00-18:00','(Colación de 15:00-16:00)'],
-            linkRedireccionar:['http://www.integravet.cl/']
-        }]
-    },
-    {
-        handle:"Cerrillos",
-        1:[{
-            linkIcono: 'https://static.wixstatic.com/media/4ef24d_f5fb6a594cc34375b97eb4078396949b~mv2.png/v1/crop/x_0,y_0,w_334,h_124/fill/w_239,h_90,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_f5fb6a594cc34375b97eb4078396949b~mv2.webp',
-            linkImagenFondo:'https://static.wixstatic.com/media/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.png/v1/fill/w_603,h_311,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.webp',
-            whatsapp:'+56225863727 /  +56999195575',
-            texoNegrita:['Horarios'],
-            textoNormal:['Lunes a domingo: 10:00 a 21:00 hrs','Av. Américo Vespucio #1501, Local BT-121'],
-            linkRedireccionar:['http://www.integravet.cl/'],
-            linkVisible:['www.doctorpet.cl'],
-            imagenInstagram:['https://static.wixstatic.com/media/4ef24d_6138ae673c0b46b3b69ec4e15215468c~mv2.png/v1/fill/w_144,h_47,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_6138ae673c0b46b3b69ec4e15215468c~mv2.webp'],
-            imagenFacebook:['https://static.wixstatic.com/media/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.png/v1/fill/w_168,h_27,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.webp']
-        }]
-    },
-    {
-        handle:"Delivery",
-        1:[{
-            linkIcono: 'https://static.wixstatic.com/media/4ef24d_df8888d6fb944e50ae00d23399ea5eac~mv2.png/v1/fill/w_254,h_166,al_c,q_85,usm_0.66_1.00_0.01/dognita.webp',
-            linkImagenFondo:'https://static.wixstatic.com/media/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.png/v1/fill/w_603,h_311,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_2e48570c7fa649df979c97d3efb21f8c~mv2.webp',
-            texoNegrita:['Horarios'],
-            textoNormal:['Lunes a domingo: 10:00 a 21:00 hrs','Av. Américo Vespucio #1501, Local BT-121'],
-            linkRedireccionar:['http://www.integravet.cl/'],
-            linkVisible:['www.doctorpet.cl'],
-            imagenInstagram:['https://static.wixstatic.com/media/4ef24d_6138ae673c0b46b3b69ec4e15215468c~mv2.png/v1/fill/w_144,h_47,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_6138ae673c0b46b3b69ec4e15215468c~mv2.webp'],
-            imagenFacebook:['https://static.wixstatic.com/media/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.png/v1/fill/w_168,h_27,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.webp']
-        }]
-    }
-]
+
+
+
 
 app.listen(app.get('port'), function(){
     console.log('Servidor escuchando %d',app.get('port'))
