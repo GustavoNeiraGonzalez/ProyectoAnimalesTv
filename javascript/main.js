@@ -29,16 +29,25 @@
                         }
                       });
         }
-        var botonVetYCom = document.querySelectorAll('.btnVetCom');
 
-        function Mostrar(){
+        function MostrarVetYCom(){
                 document.querySelectorAll('.btnVetCom').forEach(item => {
                         item.addEventListener('click', event =>{
                                 document.getElementById("carta").style.display="block";
+                                document.getElementById("carta").style.display="flex";
+                                document.getElementById("carta").style.justifyContent="center";
+                                document.getElementById("carta").style.flexWrap="wrap";
                                 document.getElementById("Fondo").style.visibility="visible";
                                 //handle click
                                 })
                         })
-                      
         }
-        
+        function CerrarVetYCom(){
+                document.getElementById('Fondo').addEventListener('click',function(){
+                        document.getElementById("carta").style.display="none";
+                        document.getElementById("Fondo").style.visibility="hidden";
+                })
+                document.getElementById('botonX').addEventListener('click',function(){
+                        
+                });
+        }
