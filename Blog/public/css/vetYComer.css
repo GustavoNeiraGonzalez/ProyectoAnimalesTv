@@ -8,6 +8,12 @@ main{
     justify-content: center;
     
 }
+#negrisima{
+    font-weight: bold ;
+}
+#subrayado{
+    text-decoration: underline;
+}
 .wave{/*Clase wave, la que esta entre el main y el footer*/
     background-color: white;
 }

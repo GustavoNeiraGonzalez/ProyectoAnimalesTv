@@ -34,28 +34,36 @@ main
   #TituloVetYCom
     h2 Veterinarias y comercios
     h4 DISPONIBLES EN CUARENTENA
-  .vetCom1
-    img(src='https://static.wixstatic.com/media/4ef24d_df8888d6fb944e50ae00d23399ea5eac~mv2.png/v1/fill/w_254,h_166,al_c,q_85,usm_0.66_1.00_0.01/dognita.webp' alt='')
-    button.btnVetCom Ver Servicios
-    #Fondo
-      button#botonX
-        i.fas.fa-times-circle
-    #carta
-      img(src='https://static.wixstatic.com/media/4ef24d_df8888d6fb944e50ae00d23399ea5eac~mv2.png/v1/fill/w_254,h_166,al_c,q_85,usm_0.66_1.00_0.01/dognita.webp' alt='')
-      p nuestros horarios de atenci&oacute;n
-      p
-        | asdajkfjkdsjfkdsfkjskfjkfd 2343242234324234324324  dfsfdssdfdfojofdsg jds jofdsjgogojfd jfdso jgofd ojfd g oog jodsjgdfdsf dsf odsjf jdsof jodsf ksfkjdsfkfdkjdskfjkfdkdsjfk albion online es un mmorpg que consiste en tener un nombre muy largo para que se yo
-      p lunes a sabado 10:00-15:00 y 16:00-18:00
-      p (colaci&oacute;n de 15:00-16:00)
-      span#spanSubrayado subrayado
-      h4.numero
-        i.fas.fa-phone-square(style='color:rgb(20, 207, 20)')
-        | 22 11 44 123
-      #ImagenesRedSocial
-        a(href='')
-          img(src='https://static.wixstatic.com/media/4ef24d_6138ae673c0b46b3b69ec4e15215468c~mv2.png/v1/fill/w_144,h_47,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_6138ae673c0b46b3b69ec4e15215468c~mv2.webp' alt='')
-        a(href='')
-          img(src='https://static.wixstatic.com/media/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.png/v1/fill/w_240,h_39,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.webp' alt='')
+    each buscador in posts 
+      each buscador2 in buscador.1
+        div.vetCom1
+          img(src=`${buscador2.linkIcono}` alt='')
+          button.btnVetCom Ver Servicios
+          #Fondo
+            button#botonX
+              i.fas.fa-times-circle
+          #carta
+            img(src=`${buscador2.linkIcono}` alt='')
+            each 
+              if i.substr(0,1)=='*' 
+                span#negrisima #{i.substr(1,i.lenght)}
+              else if i.substr (0,1)=='%'
+                span#subrayado #{i.substr(1,i.lenght)}
+              else 
+                span 
+              p
+              | asdajkfjkdsjfkdsfkjskfjkfd 2343242234324234324324  dfsfdssdfdfojofdsg jds jofdsjgogojfd jfdso jgofd ojfd g oog jodsjgdfdsf dsf odsjf jdsof jodsf ksfkjdsfkfdkjdskfjkfdkdsjfk albion online es un mmorpg que consiste en tener un nombre muy largo para que se yo
+            p lunes a sabado 10:00-15:00 y 16:00-18:00
+            p (colaci&oacute;n de 15:00-16:00)
+            span#spanSubrayado subrayado
+            h4.numero
+              i.fas.fa-phone-square(style='color:rgb(20, 207, 20)')
+              | 22 11 44 123
+            #ImagenesRedSocial
+              a(href='')
+                img(src='https://static.wixstatic.com/media/4ef24d_6138ae673c0b46b3b69ec4e15215468c~mv2.png/v1/fill/w_144,h_47,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_6138ae673c0b46b3b69ec4e15215468c~mv2.webp' alt='')
+              a(href='')
+                img(src='https://static.wixstatic.com/media/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.png/v1/fill/w_240,h_39,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.webp' alt='')
   .vetCom1
     img(src='https://static.wixstatic.com/media/4ef24d_876be97f922e45d9bd2efa58ad4a5d35~mv2.png/v1/fill/w_360,h_80,al_c,q_85,usm_0.66_1.00_0.01/Logomax.webp' alt='')
     button.btnVetCom Ver Servicios
@@ -95,9 +103,9 @@ footer
   a(href='')
     img(src='https://static.wixstatic.com/media/4ef24d_c4bf7ff8b9844df4b913ac3fdd4ff90a~mv2.png/v1/fill/w_95,h_30,al_c,q_85/4ef24d_c4bf7ff8b9844df4b913ac3fdd4ff90a~mv2.webp' alt='')
 
-script(src='/../javascript/main.js')
+script(src='../javascript/main.js')
 script.
-
+    
     CambiarCheckbox();
     clickMain();
     MostrarVetYCom();

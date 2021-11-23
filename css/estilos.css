@@ -9,7 +9,13 @@ h3,h4,h2{
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-
+.elStream{
+    display: flex;
+    
+}
+.elStream .divStream{
+    width: 70%;
+}
 .DescuentosProgramacion{
     width: 100%;
     height: auto;
@@ -267,7 +273,9 @@ button{
 }
 /*Animación cuadro de texto Publicidad*/
 
-
+.chattt{
+    height: auto;
+}
 /*Plan publicitario*/
 /*footer*/
 footer{
