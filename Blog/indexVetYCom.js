@@ -29,7 +29,7 @@ const vetYCom = [
             imagenFacebook:['https://static.wixstatic.com/media/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.png/v1/fill/w_168,h_27,al_c,q_85,usm_0.66_1.00_0.01/4ef24d_7f8fd7c2c2364d74bf6628081bcaa27c~mv2.webp']
 
         }]
-    }
+    },
     {
         handle:"Cerrillos",
         1:[{
@@ -58,21 +58,21 @@ const vetYCom = [
     }
 ]
 
-app.get('/posts/:i/:handle',(req, res) =>{ // Dos puntos en la URL creará una variable (ejemplo --> :NOMBRE_VARIABLE_1/:NOMBRE_VARIABLE_2 )
+app.get('/vetYCom/:i/:handle',(req, res) =>{ // Dos puntos en la URL creará una variable (ejemplo --> :NOMBRE_VARIABLE_1/:NOMBRE_VARIABLE_2 )
     //Al poner el :i indica que i es variable, entonces al ejecutar varias veces incrementará en 1 valiendo inicialmente 0
     res.render(`plantillaPost`, { // Para usar la variable escribir req.params.NOMBRE_VARIABLE
-        linkIcono: posts[req.params.i].linkIcono, 
-        whatsapp: posts[req.params.i].whatsapp,
-        texoNegrita: posts[req.params.i].texoNegrita,
-        textoNormal: posts[req.params.i].textoNormal,
-        textoSubrayado: posts[req.params.i].textoSubrayado,
-        linkRedireccionar: posts[req.params.i].linkRedireccionar,
-        imagenInstagram: posts[req.params.i].imagenInstagram,
-        imagenFacebook: posts[req.params.i].imagenFacebook
+        linkIcono: vetYCom[req.params.i].linkIcono, 
+        whatsapp: vetYCom[req.params.i].whatsapp,
+        texoNegrita: vetYCom[req.params.i].texoNegrita,
+        textoNormal: vetYCom[req.params.i].textoNormal,
+        textoSubrayado: vetYCom[req.params.i].textoSubrayado,
+        linkRedireccionar: vetYCom[req.params.i].linkRedireccionar,
+        imagenInstagram: vetYCom[req.params.i].imagenInstagram,
+        imagenFacebook: vetYCom[req.params.i].imagenFacebook
     })
 });
 
-app.get('/',(req, res) => res.render('vetYCom',{posts}));
+app.get('/',(req, res) => res.render('vetYCom',{vetYCom}));
 
 app.listen(app.get('port'), function(){
     console.log('Servidor escuchando %d',app.get('port'))
