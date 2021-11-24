@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="css/planPubli.css">
     <title>Emisora De Radio | Mascotas Radio Tv</title>
 </head>
-
 <body>
     <header>
         <!--logo-->
@@ -40,15 +39,35 @@
                 <a href="">Equipos de ventas</a>
             </nav>
         </div>
-        
+        <!-- Paste the following into the <head>  -->
+<link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet">
+<link href="https://unpkg.com/silvermine-videojs-quality-selector@1.1.2/dist/css/quality-selector.css" rel="stylesheet">
+
+<!-- Paste the following into the <body> -->
+<video id="videojs" class="video-js vjs-fluid vjs-default-skin vjs-big-play-centered" controls preload="auto" autoplay muted fluid="true" >
+
+      <source src="https://mediacpstreamchile.com:1936/victorcarrasco/victorcarrasco/playlist.m3u8" type="application/x-mpegURL">
+    <p class="vjs-no-js">
+  To view this video please enable JavaScript, and consider upgrading to a web browser that
+  <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+ </p>
+</video>
+
+<script src="https://unpkg.com/video.js@7/dist/video.min.js"></script>
+  <script type="text/javascript">
+  var player = videojs('videojs');
+
+   </script>
+            
     </header>
 
     <main>
-        <section class="elStream">
-            <div class=divStream></div>
-            <div id="chatbro">
+        <section class="EspacioStream">
+            <h1>espacio stream</h1>
+            
+                            
 
-            </div>
+            
         </section>
         <section class="DescuentosProgramacion">
             <article class="DescuentosVideo">

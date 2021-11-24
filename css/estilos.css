@@ -9,12 +9,9 @@ h3,h4,h2{
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.elStream{
-    display: flex;
-    
-}
-.elStream .divStream{
-    width: 70%;
+.EspacioStream{
+    height: 300px;
+    background-color: dimgrey;
 }
 .DescuentosProgramacion{
     width: 100%;
@@ -72,6 +69,7 @@ p{
     background-color:cadetblue;
     display: flex;
     justify-content: center;
+    
 }
 .NuestrasPublicaciones div{
     height: 400px;
