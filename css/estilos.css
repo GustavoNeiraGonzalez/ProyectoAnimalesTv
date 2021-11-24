@@ -66,6 +66,18 @@ p{
     background-color: rgb(0, 128, 111);
 }
 /*sección noticias*/
+/*sección nuestras publicaciones*/
+.NuestrasPublicaciones{
+    text-align: center;
+    background-color:cadetblue;
+    display: flex;
+    justify-content: center;
+}
+.NuestrasPublicaciones div{
+    height: 400px;
+
+}
+/*sección nuestras publicaciones*/
 .noticias {
     display:flex;
     width: 100%;
