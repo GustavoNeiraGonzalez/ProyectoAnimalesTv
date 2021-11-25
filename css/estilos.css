@@ -10,9 +10,16 @@ p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 .EspacioStream{
-    height: 300px;
+    height: auto;
     background-color: dimgrey;
+    display: flex;
+    flex-direction: column;
 }
+.EspacioStream div #DivStream{
+    display: flex;
+    flex-direction: row;
+}
+
 .DescuentosProgramacion{
     width: 100%;
     height: auto;
@@ -283,8 +290,9 @@ button{
 }
 /*Animación cuadro de texto Publicidad*/
 
-.chattt{
-    height: auto;
+#chatbro{
+    width: 30%;
+    
 }
 /*Plan publicitario*/
 /*footer*/
