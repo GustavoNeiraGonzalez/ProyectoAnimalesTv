@@ -27,6 +27,10 @@
     background-color: greenyellow;
     display: flex;
     flex-direction: column;
+    text-align: center;
+}
+.Artprogramacion h3{
+    padding-top: 10px;
 }
 .ArtProgramacion #ImagenesTop{
     padding-top: 10px;
@@ -72,6 +76,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 }
 .ArtPublicateVideos .ArtPublicateVideosTexto{
     width: 100%;

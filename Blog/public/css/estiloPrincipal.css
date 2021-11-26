@@ -2,6 +2,11 @@ p{
     font-size: 15px;
     
 }
+h3,h4,h2,h1{
+    font-family: georgia,palatino,book antiqua,palatino linotype,serif;
+    font-size: 25px;
+    color: #f1f7f4
+}
 body{
     background-color: #BDC3C7;
     padding: 0px;

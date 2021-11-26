@@ -4,7 +4,7 @@
 }
 h3,h4,h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: 17px;
+    font-size: 22px;
 }
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -54,6 +54,7 @@ header .top #IconoMenu2{
     flex-wrap: wrap;
     flex-direction: column;
     font-size: 25px;
+    z-index: 2;
 }
 .menu a{
     color:black;
