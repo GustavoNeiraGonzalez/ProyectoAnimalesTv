@@ -6,20 +6,45 @@ h3,h4,h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 17px;
 }
+
 p{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
 .EspacioStream{
     height: auto;
     background-color: dimgrey;
     display: flex;
     flex-direction: column;
+    text-align: center;
 }
 .EspacioStream div #DivStream{
     display: flex;
-    flex-direction: row;
+    width: 90%;
+    margin-left: 15px;
+    border:solid;
+    border-bottom-width: 7px;
+    margin-bottom: 15px;
 }
-
+#chatbro{
+    display: flex;
+    max-height: 100%;
+    margin-bottom: 15px;
+}
+#cajachatbro{
+    display: flex;
+    justify-content: center;
+}
+#antenas{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    
+}
+#antenas img{
+    height: 100px;
+    margin-left: 15px;
+}
 .DescuentosProgramacion{
     width: 100%;
     height: auto;
@@ -290,10 +315,7 @@ button{
 }
 /*Animación cuadro de texto Publicidad*/
 
-#chatbro{
-    width: 30%;
-    
-}
+
 /*Plan publicitario*/
 /*footer*/
 footer{
@@ -317,6 +339,41 @@ footer a{
     background-color:hsl(182, 25%, 50%);
 }
 /*footer*/
+
+@media all and (min-width:1000px){
+    .EspacioStream{
+        display: flex;
+    }
+    #cajadivstream{
+        display: flex;
+    }
+    .EspacioStream #cajadivstream #DivStream{
+        display: flex;
+        width: 60%;
+        margin-left: 15px;
+        border:solid;
+        margin-bottom: 15px;
+    }
+    #chatbro{
+        display: flex;
+        margin-bottom: 15px;
+        margin-left: 10%;
+    }
+    #cajachatbro{
+        display: flex;
+        justify-content: center;
+        max-width: 43%;
+
+    }
+    #antenas{
+        width: 60%;
+        padding-left: 15px;
+    }
+    #antenas img{
+        height: 100px;
+        margin-left: 15px;
+    }
+}
 
 @media all and (min-width:1000px){
     header .top #IconoMenu2{
