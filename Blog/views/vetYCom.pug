@@ -34,7 +34,7 @@ main
   #TituloVetYCom
     h2 Veterinarias y comercios
     h4 DISPONIBLES EN CUARENTENA
-    each buscador in posts 
+    each buscador in vetYCom
       each buscador2 in buscador.1
         div.vetCom1
           img(src=`${buscador2.linkIcono}` alt='')
@@ -44,13 +44,13 @@ main
               i.fas.fa-times-circle
           #carta
             img(src=`${buscador2.linkIcono}` alt='')
-            each 
+            each buscador2.texto
               if i.substr(0,1)=='*' 
                 span#negrisima #{i.substr(1,i.lenght)}
               else if i.substr (0,1)=='%'
                 span#subrayado #{i.substr(1,i.lenght)}
               else 
-                span 
+                span #{i}
               p
               | asdajkfjkdsjfkdsfkjskfjkfd 2343242234324234324324  dfsfdssdfdfojofdsg jds jofdsjgogojfd jfdso jgofd ojfd g oog jodsjgdfdsf dsf odsjf jdsof jodsf ksfkjdsfkfdkjdskfjkfdkdsjfk albion online es un mmorpg que consiste en tener un nombre muy largo para que se yo
             p lunes a sabado 10:00-15:00 y 16:00-18:00
