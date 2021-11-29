@@ -23,6 +23,7 @@
 }
 .QuienesSomos #qnsomosTexto{
     width: 80%;
+    text-align: center;
 }
 .QuienesSomos #cajaqntexto{
     align-items: center;
@@ -68,4 +69,9 @@
 }
 .waveV1{
     background-color: greenyellow;
+}
+@media all and (min-width:1350px){
+    .QuienesSomos #qnsomosTexto{
+        width: 70%;
+    }
 }

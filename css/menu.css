@@ -36,6 +36,14 @@ header .top #IconoMenu2{
     top:3%;
     font-size: 25px;
 }
+header .top #IconoMenu3{
+    color:white;
+    position:absolute;
+    right: 18%;
+    top:3%;
+    font-size: 25px;
+}
+
 
 #menu-bar{
     display:none;
@@ -69,4 +77,26 @@ header .top #IconoMenu2{
 }
 #menu-bar:checked ~ .menu{
     transform:translateX(0%)
+}
+
+@media all and (min-width:700px){
+    header .top #IconoMenu3{
+        right: 15%
+    }
+}
+@media (width:320px) {
+    header .top #IconoMenu3{
+        right: 19%;
+    }
+    header .top #IconoMenu2{
+        right: 10%;
+    }
+}
+@media all and (min-width:1300px){
+    header .top #IconoMenu3{
+        right: 10%;
+    }
+    header .top #IconoMenu2{
+        right: 6%;
+    }
 }
