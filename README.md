@@ -1,6 +1,6 @@
 # ProyectoAnimalesTv
 ### Proyecto creado durante el proceso de practica profesional
-#### Se realizo la mayoria del proyecto completo, sin embargo se detuvo su finalización para la realización del proyecto redsocial
+#### Se realizo la casi hasta completar el proyecto, sin embargo se detuvo su finalización para la realización del proyecto redsocial
 ## **¿Que se utilizo en este proyecto?**
 
 html, css, javascript, Node.js
